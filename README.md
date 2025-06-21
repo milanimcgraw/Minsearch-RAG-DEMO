@@ -15,13 +15,11 @@ This repository demonstrates a lightweight Retrieval-Augmented Generation (RAG) 
 
 Dependencies are listed in `requirements.txt`. Key packages:
 
-```text
-- `pandas`: for handling and structuring JSON data
-- `scikit-learn`: for TF-IDF vectorization and cosine similarity
-- `ipywidgets`: for interactive controls in Jupyter notebooks
-- `tqdm`: for progress tracking
-- `notebook`: Jupyter Notebook interface
-```
+* `pandas`: for handling and structuring JSON data
+* `scikit-learn`: for TF-IDF vectorization and cosine similarity
+* `ipywidgets`: for interactive controls in Jupyter notebooks
+* `tqdm`: for progress tracking
+* `notebook`: Jupyter Notebook interface
 
 Install with:
 
