@@ -1,0 +1,61 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# Python virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Mac system files
+.DS_Store
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Environment and config files
+.env
+.env.*
+
+# Ignore local data/output
+*.sqlite3
+*.db
+*.csv
+*.tsv
+*.jsonl
+*.pdf
+*.xlsx
+*.xls
+
+# Ignore experiment outputs and cache
+*.cache
+.cache/
+*.bak
+
+# IPython history
+.history
+
+# Pip and Poetry files
+pip-log.txt
+poetry.lock
+
+# Ignore model files and large data
+*.pt
+*.pth
+*.h5
+*.ckpt
+*.onnx
+
+# GitHub actions / Python packaging artifacts
+*.egg-info/
+dist/
+build/
