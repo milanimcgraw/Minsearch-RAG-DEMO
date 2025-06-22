@@ -20,7 +20,7 @@ A minimalistic text search engine that uses TF-IDF and cosine similarity for tex
 - Customizable tokenizer patterns and stop words
 - Efficient search with filtering and boosting
 
-### ⚙️ Advanced Features
+## ⚙️ Advanced Features
 
 #### Custom Tokenizer Pattern
 ```python
@@ -100,7 +100,7 @@ Run the main notebook:
 ```bash
 jupyter notebook Notebooks/minsearch-rag.ipynb
 ```
-
+---
 ## 📌 Credits
 > 📦 This project uses [MinSearch](https://github.com/alexeygrigorev/minsearch), created and maintained by [**Alexey Grigorev**](https://github.com/alexeygrigorev).
 > Licensed under the MIT License.
