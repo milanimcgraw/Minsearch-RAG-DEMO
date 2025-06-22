@@ -84,7 +84,7 @@ pip install -r requirements.txt
 ## ⚙️ Notebooks
 * `minsearch-rag.ipynb`: Walkthrough of keyword-based RAG pipeline
 * `parse-faq.ipynb`: Script to convert JSON-formatted FAQ content into usable input format
-* `minsearch_example.ipynb`: Example demo from [MinSearch](https://github.com/alexeygrigorev/minsearch) by [**Alexey Grigorev**](https://github.com/alexeygrigorev).
+* `minsearch_example.ipynb`: Example demo from [MinSearch](https://github.com/alexeygrigorev/minsearch) created by [**Alexey Grigorev**](https://github.com/alexeygrigorev).
 
 ## ⚙️ Quickstart
 Clone the repo and install dependencies:
