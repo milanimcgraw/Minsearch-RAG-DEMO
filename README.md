@@ -56,7 +56,7 @@ results = index.search("python", filter_dict=filter_dict)
 
 ## 🛠️ Technical Stack
 - **Knowledge Base**: `documents.json` containing course-related FAQ documents from the [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp/tree/main)  
-- **Retriever**: MinSearch (lightweight local semantic search using TF-IDF and keyword matching)  
+- **Retriever**: MinSearch (lightweight local lexical search using TF-IDF and keyword matching)  
 - **Search Method**: Hybrid (TF-IDF + keyword field filtering)  
 - **Embedding/Vectorization**: Internal MinSearch vectorizer (TF-IDF)
 - **Interface**: Jupyter Notebook   
@@ -70,15 +70,14 @@ Dependencies are listed in `requirements.txt`. Key packages:
 * `tqdm`: for progress tracking
 * `notebook`: Jupyter Notebook interface
 * `minsearch`: text search engine that uses TF-IDF and cosine similarity for text fields and exact matching for keyword fields
-Install with:
+  
+**Install with:**
 
 ```bash
 pip install -r requirements.txt
 ```
 
 ## ⚙️ Datasets
-This repo includes two JSON sources in the `Data/` folder:
-
 * `documents.json`: Small-scale keyword-only dataset
 * `documents-llm.json`: Extended document set with LLM formatting in mind
 
