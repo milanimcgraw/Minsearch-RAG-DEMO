@@ -55,7 +55,7 @@ results = index.search("python", filter_dict=filter_dict)
 ```
 
 ## 🛠️ Technical Stack
-- **Knowledge Base**: `documents.json` containing course-related FAQ documents from the [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp/tree/main)  
+- **Knowledge Base**: `documents.json` containing course-related FAQ documents from the [LLM Zoomcamp] (https://github.com/DataTalksClub/llm-zoomcamp/tree/main) course
 - **Retriever**: MinSearch (lightweight local lexical search using TF-IDF and keyword matching)  
 - **Search Method**: Hybrid (TF-IDF + keyword field filtering)  
 - **Embedding/Vectorization**: Internal MinSearch vectorizer (TF-IDF)
@@ -81,6 +81,11 @@ pip install -r requirements.txt
 * `documents.json`: Small-scale keyword-only dataset
 * `documents-llm.json`: Extended document set with LLM formatting in mind
 
+> #### **FAQ Documents**
+> * DE Zoomcamp: https://docs.google.com/document/d/19bnYs80DwuUimHM65UV3sylsCn2j1vziPOwzBwQrebw/edit
+> * ML Zoomcamp: https://docs.google.com/document/d/1LpPanc33QJJ6BSsyxVg-pWNMplal84TdZtq10naIhD8/edit
+> * MLOps Zoomcamp: https://docs.google.com/document/d/12TlBfhIiKtyBv8RnsoJR6F72bkPDGEvPOItJIxaEzE0/edit
+
 ## ⚙️ Notebooks
 * `minsearch-rag.ipynb`: Walkthrough of keyword-based RAG pipeline
 * `parse-faq.ipynb`: Script to convert JSON-formatted FAQ content into usable input format
@@ -101,10 +106,8 @@ Run the main notebook:
 jupyter notebook Notebooks/minsearch-rag.ipynb
 ```
 ---
-## 📌 Credits
-> 📦 This project uses [MinSearch](https://github.com/alexeygrigorev/minsearch), created and maintained by [**Alexey Grigorev**](https://github.com/alexeygrigorev).
-> Licensed under the MIT License.
-> Original MinSearch files and examples are preserved in the `/minsearch` directory with attribution.
+> ## 📌 Credits
+> 📦 This project uses [MinSearch](https://github.com/alexeygrigorev/minsearch), created and maintained by [**Alexey Grigorev**](https://github.com/alexeygrigorev). Code adapted from the [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp/tree/main) by DataTalks.Club. Original MinSearch files and examples are preserved in the `/minsearch` directory with attribution.
 
 ## ⚙️ License
 This project is released under MIT license. 
