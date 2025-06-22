@@ -1,20 +1,3 @@
-# minsearch
-
-A minimalistic text search engine that uses TF-IDF and cosine similarity for text fields and exact matching for keyword fields. The library provides two implementations:
-
-1. `Index`: A basic search index using scikit-learn's TF-IDF vectorizer
-2. `AppendableIndex`: An appendable search index using an inverted index implementation that allows for incremental document addition
-
-## Features
-
-- Text field indexing with TF-IDF and cosine similarity
-- Keyword field filtering with exact matching
-- Field boosting for fine-tuning search relevance
-- Stop word removal and custom tokenization
-- Support for incremental document addition (AppendableIndex)
-- Customizable tokenizer patterns and stop words
-- Efficient search with filtering and boosting
-
 ## Installation 
 
 ```bash
@@ -98,44 +81,6 @@ index = AppendableIndex(
     stop_words={"the", "a", "an"}  # Custom stop words
 )
 ```
-
-### Advanced Features
-
-#### Custom Tokenizer Pattern
-
-```python
-from minsearch import AppendableIndex
-
-# Create index with custom tokenizer pattern
-index = AppendableIndex(
-    text_fields=["title", "description"],
-    keyword_fields=["course"],
-    tokenizer_pattern=r'[\s\W\d]+'  # Custom pattern to split on whitespace, non-word chars, and digits
-)
-```
-
-#### Field Boosting
-
-```python
-# Boost certain fields to increase their importance in search
-boost_dict = {
-    "title": 2.0,      # Title matches are twice as important
-    "description": 1.0  # Normal importance for description
-}
-results = index.search("python", boost_dict=boost_dict)
-```
-
-#### Keyword Filtering
-
-```python
-# Filter results by exact keyword matches
-filter_dict = {
-    "course": "CS101",
-    "level": "beginner"
-}
-results = index.search("python", filter_dict=filter_dict)
-```
-
 ## Examples
 
 ### Interactive Notebook
@@ -206,3 +151,8 @@ rm -r build/ dist/ minsearch.egg-info/
 - `Pipfile`: Development dependencies
 
 Note: The `minsearch.py` file in the root directory is maintained for backward compatibility with the LLM Zoomcamp course.
+
+---
+
+## 📎 **Credits**  
+> This content was adapted from the original [MinSearch repository](https://github.com/alexeygrigorev/minsearch) by [Alexey > Grigorev](https://github.com/alexeygrigorev). The structure and documentation have been included here for demo purposes within the > MinSearch RAG Pipeline project.
