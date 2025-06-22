@@ -3,3 +3,4 @@ notebook==7.1.2
 pandas
 scikit-learn
 ipywidgets
+minsearch
